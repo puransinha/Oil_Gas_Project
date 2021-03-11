@@ -12,5 +12,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 RUN cd /usr/src/app
 RUN chmod 777 *
+RUN ["groupadd", "-g", "1000", "AB_DOCKER_SETUP_GROUP"]
 # default command to execute
 CMD python3 app.py
