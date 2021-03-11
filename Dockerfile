@@ -11,6 +11,6 @@ COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
 RUN cd /usr/src/app
-
+RUN chmod 777 *
 # default command to execute
 CMD python3 app.py
